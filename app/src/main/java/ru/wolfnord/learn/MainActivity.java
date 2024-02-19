@@ -1,20 +1,25 @@
 package ru.wolfnord.learn;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import ru.wolfnord.learn.databinding.ActivityMainBinding;
+
 //import android.net.Uri;
 //import android.widget.Toast;
 //import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    ActivityMainBinding activityMainBinding;
 
     public static final String KEY = "key"; // Ключ для Экстра
 
